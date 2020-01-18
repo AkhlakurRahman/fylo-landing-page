@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(218, 28%, 13%);
   color: #fff;
@@ -17,6 +21,7 @@ header {
 }
 
 .container {
+  padding: 20px;
   margin: 0 auto;
   max-width: 100%;
   width: 1200px;
@@ -24,6 +29,10 @@ header {
 
 img {
   max-width: 100%;
+}
+
+p {
+  line-height: 1.5;
 }
 
 /**
@@ -56,7 +65,6 @@ nav {
 }
 
 .hero p {
-  line-height: 1.7;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -75,4 +83,97 @@ h1 {
   border-radius: 50px;
   border: 0;
   cursor: pointer;
+}
+
+/**
+* Feature Section
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  width: 400px;
+  text-align: center;
+  margin: 40px;
+}
+
+.features p {
+  font-size: 14px;
+}
+
+/**
+* Motivation Section
+*/
+
+.motivation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.motivation .motivation-img {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.productive {
+  flex: 1;
+  width: 400px;
+}
+
+.work-link {
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+.productive .work-link img {
+  width: 15px;
+}
+
+/**
+* Testimonials
+*/
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.testimonial .person {
+  display: flex;
+  margin-top: 30px;
+}
+
+.testimonial .person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial .person h5 {
+  margin: 0;
+}
+
+.testimonial .person h6 {
+  font-weight: normal;
+  opacity: 0.7;
+  margin: 5px 0;
 }
